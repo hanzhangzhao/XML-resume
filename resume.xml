@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type = "text/xsl" href = "resume.xsl"?>
+<!-- Personal resume marked up with XML -->
+<resume xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="C:\Users\hazen\Desktop\resume.xsd">
+	<name>
+		<firstname>Hanzhang</firstname>
+		<lastname>Zhao</lastname>
+	</name>
+	<address>
+		<street>172 Bridgeland Dr</street>
+		<city>Winnipeg</city>
+		<province>MB</province>
+		<zipcode>R3Y0E2</zipcode>
+	</address>
+	<contact>
+		<phone>2042309805</phone>
+		<email>hazenzhao@gmail.com</email>
+	</contact>
+	<bodypart>
+		<education>
+			<degree>
+				<program>Bachelor of Science</program>
+				<major>Computer Science major</major>
+				<duration>
+					<startdate>2015-09</startdate>
+					<enddate>2019-05</enddate>
+				</duration>
+				<university>University of Manitoba</university>
+				<city>Winnipeg</city>
+				<province>Manitoba</province>
+			</degree>
+			<degree>
+				<program>Bachelor of Science</program>
+				<major>Electrical Engineering major</major>
+				<duration>
+					<startdate>2013-01</startdate>
+					<enddate>2015-09</enddate>
+				</duration>
+				<university>University of Manitoba</university>
+				<city>Winnipeg</city>
+				<province>Manitoba</province>
+			</degree>
+		</education>
+		<skills>
+			<skill name="Programming">
+        HTML5, CSS3, JavaScript, PHP, C#, Java, Python, C++, C, LC3 Assemble, Ruby
+      </skill>
+			<skill name="Database">
+        MySQL, MariaDB, SQL
+      </skill>
+			<skill name="Library/Technology">
+        Ajax, Bootstrap, jQuery, Socket.IO, XML, WordPress, ASP.NET, git, GCP
+      </skill>
+      <skill name="Operating System">
+        Windows, Unix, Linux, Mac OS X
+      </skill>
+		</skills>
+		<projects>
+			<project>
+				<title>E-commerce website (HTML, CSS, JavaScript, PHP)</title>
+				<description>
+          -	Built an ecommerce website using HTML, CSS, and Bootstrap
+        </description>
+        <description>
+          -	Implemented a user authentication system including graphic captcha by JavaScript and PHP
+        </description>
+        <description>
+          -	Installed and configured LAMP solution in Ubuntu environment
+        </description>
+			</project>
+			<project>
+				<title>ASP.NET online computer store (C#, ASP.NET)</title>
+				<description>
+          -	Developed an online computer store using ASP.NET in C# as server-side language
+        </description>
+        <description>
+          -	Designed and built a database to store product information and user credentials by MySQL
+        </description>
+        <description>
+          -	The web application was published to Azure App Service using Visual Studio
+        </description>
+        <description>
+          -	Customers are able to customize the hardware of a pre-built computer based on their needs
+        </description>
+			</project>
+      <project>
+				<title>Food ordering system (jQuery)</title>
+				<description>
+          -	Collaborated with two members to designed and implemented the menu by HTML and CSS
+          -	Independently Implemented place, edit, and delete order function using jQuery and JavaScript
+          -	HCI techniques, such as identify stakeholders, brainstorm, usability testing, and paper prototypes are used in application development process
+        </description>
+        <description>
+          -	Customers are able to customize the hardware of a pre-built computer based on their needs
+        </description>
+        <description>
+          -	Customers are able to customize the hardware of a pre-built computer based on their needs
+        </description>
+			</project> 
+			<project>
+				<title>Tetris Game (WebSocket)</title>
+				<description>
+          -	Built a WebSocket server by using node.js WebSocket module in localhost      
+        </description>
+        <description>
+          -	Implemented 2-player mode, which 2 players can play against one another on the same computer, by socket.IO library
+        </description>
+        <description>
+          -	The user interface and game pieces are built by HTML, CSS, and JavaScript
+        </description>
+			</project>
+      <project>
+				<title>Utility tools (Ajax, JavaScript)</title>
+				<description>
+          -	Designed and developed some useful utility tools including measurement converters, mortgage calculator, currency exchanger, etc
+        </description>
+        <description>
+          -	Ajax technologies are used to eliminate whole page update when switching from one utility tool to another
+        </description>
+			</project>
+		</projects>
+	</bodypart>
+</resume>

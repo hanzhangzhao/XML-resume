@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+	<xs:element name="resume">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="name" type="nameType"/>
+				<xs:element name="address" type="addressType"/>
+				<xs:element name="contact" type="contactType"/>
+				<xs:element name="bodypart" type="bodypartType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:complexType name="nameType">
+		<xs:sequence>
+			<xs:element name="firstname" type="xs:string"/>
+			<xs:element name="lastname" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="addressType">
+		<xs:sequence>
+			<xs:element name="street" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="province" type="xs:string"/>
+			<xs:element name="zipcode" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="contactType">
+		<xs:sequence>
+			<xs:element name="phone" type="xs:integer"/>
+			<xs:element name="email" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="bodypartType">
+		<xs:sequence>
+			<xs:element name="education" type="educationType"/>
+			<xs:element name="skills" type="skillsType"/>
+			<xs:element name="projects" type="projectsType"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="educationType">
+		<xs:sequence>
+			<xs:element name="degree" type="degreeType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="degreeType">
+		<xs:sequence>
+			<xs:element name="program" type="xs:string"/>
+			<xs:element name="major" type="xs:string"/>
+			<xs:element name="duration" type="durationType"/>
+			<xs:element name="university" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="province" type="xs:string"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="durationType">
+		<xs:sequence>
+			<xs:element name="startdate" type="xs:gYearMonth"/>
+			<xs:element name="enddate" type="xs:gYearMonth"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="skillsType">
+		<xs:sequence>
+			<xs:element name="skill" type="skillType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="skillType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="name" use="required">
+					<xs:simpleType>
+						<xs:restriction base="xs:NMTOKEN">
+							<xs:enumeration value="Database"/>
+							<xs:enumeration value="OS"/>
+							<xs:enumeration value="Programming"/>
+						</xs:restriction>
+					</xs:simpleType>
+				</xs:attribute>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="projectsType">
+		<xs:sequence>
+			<xs:element name="project" type="projectType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="projectType">
+		<xs:sequence>
+			<xs:element name="title" type="xs:string"/>
+			<xs:element name="description" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:element name="province">
+		<xs:simpleType>
+			<xs:restriction base="xs:string">
+				<xs:enumeration value="MB"/>
+				<xs:enumeration value="Manitoba"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	
+</xs:schema>
